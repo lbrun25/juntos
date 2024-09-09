@@ -20,8 +20,10 @@ const initialState: UserState = {
   user: {
     firstName: "",
     age: undefined,
-    gender: undefined,
     birthday: undefined,
+    genderId: undefined,
+    subGenderId: undefined,
+    canDisplayGender: false,
   }
 };
 

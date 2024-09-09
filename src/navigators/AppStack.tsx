@@ -14,7 +14,7 @@ import {useNavigation} from '@react-navigation/native';
 import { WelcomeOnboardingPage } from "src/pages/onboarding/WelcomeOnboardingPage";
 import { FirstNamePage } from "src/pages/onboarding/FirstNamePage";
 import { BirthdayPage } from "src/pages/onboarding/BirthdayPage";
-import { GenrePage } from "src/pages/onboarding/GenrePage";
+import { GenderPage } from "src/pages/onboarding/GenderPage";
 import { SexualOrientationPage } from "src/pages/onboarding/SexualOrientationPage";
 import { ChooseWhoToMeetPage } from "src/pages/onboarding/ChooseWhoToMeetPage";
 import { MaxDistancePage } from "src/pages/onboarding/MaxDistancePage";
@@ -71,7 +71,7 @@ export const AppStack = () => {
         <Screen name="welcomeOnboarding" component={WelcomeOnboardingPage} />
         <Screen name="firstName" component={FirstNamePage} />
         <Screen name="birthday" component={BirthdayPage} />
-        <Screen name="genre" component={GenrePage} />
+        <Screen name="gender" component={GenderPage} />
         <Screen name="sexualOrientation" component={SexualOrientationPage} />
         <Screen name="chooseWhoToMeet" component={ChooseWhoToMeetPage} />
         <Screen name="maxDistance" component={MaxDistancePage} />
@@ -117,7 +117,7 @@ const SignupPagesOrdered: Array<
   'welcomeOnboarding',
   'firstName',
   'birthday',
-  'genre',
+  'gender',
   'sexualOrientation',
   'chooseWhoToMeet',
   'maxDistance',

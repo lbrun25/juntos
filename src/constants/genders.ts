@@ -1,100 +1,100 @@
-import { Gender, MainGenderAbbreviation } from "src/types/gender";
+import { Gender, MainGenderId } from "src/types/gender";
 
 export const Genders: Gender[] = [
   {
-    abbreviation: "m",
+    id: "m",
     label: "Homme"
   },
   {
-    abbreviation: "f",
+    id: "f",
     label: "Femme"
   },
   {
-    abbreviation: "nb",
+    id: "nb",
     label: "Non binaire"
   },
 ]
 
-export const SUB_GENDERS: Record<MainGenderAbbreviation, Gender[]> = {
+export const SUB_GENDERS: Record<MainGenderId, Gender[]> = {
   ['m']: [
     {
-      abbreviation: "m",
+      id: "m",
       label: "Homme Cis",
     },
     {
-      abbreviation: "m_intersexe",
+      id: "m_intersexe",
       label: "Homme intersexe",
     },
     {
-      abbreviation: "ftm",
+      id: "ftm",
       label: "Homme trans",
     },
     {
-      abbreviation: "m_transmasculine",
+      id: "m_transmasculine",
       label: "Transmasculine",
     },
   ],
   ['f']: [
     {
-      abbreviation: "f",
+      id: "f",
       label: "Femme cis",
     },
     {
-      abbreviation: "f_intersexe",
+      id: "f_intersexe",
       label: "Femme intersexe",
     },
     {
-      abbreviation: "mtf",
+      id: "mtf",
       label: "Femme trans",
     },
     {
-      abbreviation: "f_transfeminine",
+      id: "f_transfeminine",
       label: "Transfeminine",
     },
   ],
   ['nb']: [
     {
-      abbreviation: "nb_agender",
+      id: "nb_agender",
       label: "Agender",
     },
     {
-      abbreviation: "nb_bigender",
+      id: "nb_bigender",
       label: "Bigender ",
     },
     {
-      abbreviation: "nb_gender_fluid",
+      id: "nb_gender_fluid",
       label: "Gender Fluid",
     },
     {
-      abbreviation: "nb_gender_questioning",
+      id: "nb_gender_questioning",
       label: "Gender Questioning",
     },
     {
-      abbreviation: "nb_genderqueer",
+      id: "nb_genderqueer",
       label: "Genderqueer",
     },
     {
-      abbreviation: "nb_intersexe",
+      id: "nb_intersexe",
       label: "Personne intersexe",
     },
     {
-      abbreviation: "nb",
+      id: "nb",
       label: "Non binaire",
     },
     {
-      abbreviation: "nb_pangender",
+      id: "nb_pangender",
       label: "Pangender",
     },
     {
-      abbreviation: "nb_trans",
+      id: "nb_trans",
       label: "Personne trans",
     },
     {
-      abbreviation: "nb_transfeminine",
+      id: "nb_transfeminine",
       label: "Transfeminine",
     },
     {
-      abbreviation: "nb_transmasculine",
+      id: "nb_transmasculine",
       label: "Transmasculine",
     },
   ],

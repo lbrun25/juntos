@@ -17,15 +17,17 @@ export type SelectableItemProps = {
 
 const SelectableItemComponent = ({label, children, isSelected, onSelect, id, backgroundColor = Colors.white}: SelectableItemProps) => {
   return (
-    <TouchableOpacity flex row center onPress={() => onSelect(id)}>
+    <TouchableOpacity row center onPress={() => onSelect(id)}>
       <View row center padding-4 backgroundColor={backgroundColor} br40>
         {label && (
-          <Text body medium>
-            {label}
-          </Text>
+          <View flex width="100%">
+            <Text body medium>
+              {label}
+            </Text>
+          </View>
         )}
         {!label && children}
-        <Space />
+        <Space width={2} />
         <Circle center isSelected={isSelected} />
       </View>
     </TouchableOpacity>

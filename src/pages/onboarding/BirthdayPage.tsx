@@ -23,8 +23,6 @@ const BirthdayPageComponent = () => {
   const [input, setInput] = useState<Date | undefined>(undefined);
   const theme = useTheme();
 
-  console.log('birthdayDate:', birthdayDate)
-
   const goToNextPage = () => {
     const nextPage = getNextSignupPage(name);
     if (nextPage && isBirthdayValid) navigate(nextPage);

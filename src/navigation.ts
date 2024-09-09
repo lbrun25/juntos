@@ -19,7 +19,7 @@ export type AppStackParamList = {
   welcomeOnboarding: undefined;
   firstName: undefined;
   birthday: undefined;
-  genre: undefined;
+  gender: undefined;
   sexualOrientation: undefined;
   chooseWhoToMeet: undefined;
   maxDistance: undefined;
