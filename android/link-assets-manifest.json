@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/Bukhari Script.ttf",
+      "sha1": "b60d7e9b97bbba1b213e319457ef9369476ae0e2"
+    },
+    {
+      "path": "src/assets/fonts/Shrikhand-Regular.ttf",
+      "sha1": "ee1a2ca14244d2173f066edb18eb96b6faf4c09f"
+    }
+  ]
+}
