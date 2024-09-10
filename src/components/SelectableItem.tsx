@@ -1,12 +1,12 @@
 import React, { memo } from "react";
-import { TouchableOpacity } from "src/components/ui/TouchableOpacity";
+import { TouchableOpacity, TouchableOpacityProps } from "src/components/ui/TouchableOpacity";
 import { View } from "src/components/ui/View";
 import styled, { useTheme } from "styled-components";
 import { Space } from "src/components/Space";
 import { Colors } from "src/constants/colors";
 import { Text } from "src/components/ui/Text";
 
-export type SelectableItemProps = {
+export type SelectableItemProps = TouchableOpacityProps & {
   children?: React.ReactNode;
   label?: string;
   id: string;
@@ -15,9 +15,9 @@ export type SelectableItemProps = {
   backgroundColor?: string;
 };
 
-const SelectableItemComponent = ({label, children, isSelected, onSelect, id, backgroundColor = Colors.white}: SelectableItemProps) => {
+const SelectableItemComponent = ({label, children, isSelected, onSelect, id, backgroundColor = Colors.white, ...props}: SelectableItemProps) => {
   return (
-    <TouchableOpacity row center onPress={() => onSelect(id)}>
+    <TouchableOpacity row center onPress={() => onSelect(id)} {...props}>
       <View row center padding-4 backgroundColor={backgroundColor} br40>
         {label && (
           <View flex width="100%">

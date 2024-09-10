@@ -131,7 +131,7 @@ const GenderPageComponent = () => {
         onChecked={onDisplayedOnMyProfileChecked}
         center
       />
-      <Space height={8} />
+      <Space height={6} />
       <MemoizedButton
         disabled={!selectedGender}
         onPress={goToNextPage}

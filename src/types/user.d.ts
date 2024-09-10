@@ -1,4 +1,5 @@
 import { MainGenderId, SubGenderId } from "src/types/gender";
+import { SexualOrientationId } from "src/types/sexual-orientation";
 
 export interface User {
   firstName: string;
@@ -7,4 +8,6 @@ export interface User {
   subGenderId: SubGenderId | undefined;
   canDisplayGender: boolean;
   birthday: Date | undefined;
+  sexualOrientation: SexualOrientationId | undefined;
+  canDisplaySexualOrientation: boolean;
 }

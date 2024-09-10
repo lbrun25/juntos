@@ -24,6 +24,8 @@ const initialState: UserState = {
     genderId: undefined,
     subGenderId: undefined,
     canDisplayGender: false,
+    sexualOrientation: undefined,
+    canDisplaySexualOrientation: false,
   }
 };
 
